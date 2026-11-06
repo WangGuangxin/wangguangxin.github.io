@@ -1,0 +1,30 @@
+# very-simple 主题配置
+# 这个文件会覆盖 themes/very-simple/_config.yml，主题目录保持未修改状态便于以后更新。
+
+# 顶部导航
+menu:
+  Home: /
+  Archives: archives
+  Categories: categories
+  Tags: tags
+  About: about
+
+# 页脚社交图标（留空即不显示）
+social:
+  email:          # 填了会在页脚公开显示，按需开启
+  github: wangguangxin
+  twitter:
+  weibo:
+  googleplus:
+  rss:
+
+# 图片灯箱
+fancybox: false
+
+# 评论与统计（按需填写）
+duoshuo:
+disqus:
+google_analytics:
+google_adsense_page_level_ads:
+valine:
+  enable: false

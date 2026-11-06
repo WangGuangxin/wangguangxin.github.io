@@ -1,0 +1,13 @@
+extends base
+
+block title
+  title= page.title + " | " + config.title
+
+block main
+  .wrapper
+    .container.post-header
+      h1.post-title= page.title
+    .container.post-content
+      != page.content
+      .all-categories
+        != list_categories({show_count: true, style: 'list'})

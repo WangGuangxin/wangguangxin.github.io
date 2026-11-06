@@ -1,0 +1,13 @@
+extends base
+
+block title
+  title= page.title + " | " + config.title
+
+block main
+  .wrapper
+    .container.post-header
+      h1.post-title= page.title
+    .container.post-content
+      != page.content
+      .all-tags
+        != tagcloud({min_font: 14, max_font: 26, amount: 200, color: true, start_color: '#555', end_color: '#111'})

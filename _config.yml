@@ -83,7 +83,7 @@ exclude:
 ignore:
 
 # Extensions
-theme: next
+theme: very-simple
 
 # Local search (hexo-generator-searchdb)
 search:
