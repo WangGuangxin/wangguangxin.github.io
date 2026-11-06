@@ -1,0 +1,149 @@
+# NexT theme configuration
+# Docs: https://theme-next.js.org/docs/
+
+# ---------------------------------------------------------------
+# Scheme
+# ---------------------------------------------------------------
+# Gemini: 侧边栏常驻 + 带编号目录，最接近参考站点的观感
+scheme: Gemini
+
+darkmode: false
+
+# 关闭入场动画：NexT 的 motion 依赖 CDN 上的 animate.css，
+# CDN 不可达时正文会一直处于 hidden 状态。
+motion:
+  enable: false
+
+# ---------------------------------------------------------------
+# Menu
+# ---------------------------------------------------------------
+menu:
+  home: / || fa fa-home
+  archives: /archives/ || fa fa-archive
+  categories: /categories/ || fa fa-th
+  tags: /tags/ || fa fa-tags
+  about: /about/ || fa fa-user
+
+menu_settings:
+  icons: true
+  badges: true
+
+# ---------------------------------------------------------------
+# Sidebar
+# ---------------------------------------------------------------
+sidebar:
+  position: left
+  display: post
+  padding: 18
+  offset: 12
+
+avatar:
+  url: /images/avatar.gif
+  rounded: true
+  rotated: false
+
+social:
+  GitHub: https://github.com/wangguangxin || fab fa-github
+
+social_icons:
+  enable: true
+  icons_only: false
+
+# ---------------------------------------------------------------
+# Table of Contents（带层级编号的目录，参考站点的核心特征）
+# ---------------------------------------------------------------
+toc:
+  enable: true
+  number: true
+  wrap: true
+  expand_all: false
+  max_depth: 4
+
+# ---------------------------------------------------------------
+# Post 设置
+# ---------------------------------------------------------------
+excerpt_description: true
+read_more_btn: true
+
+post_meta:
+  item_text: true
+  created_at: true
+  updated_at:
+    enabled: true
+    another_day: true
+  categories: true
+
+symbols_count_time:
+  separated_meta: true
+  item_text_total: false
+
+# 代码块
+codeblock:
+  theme:
+    light: default
+    dark: stackoverflow-dark
+  prism:
+    light: prism
+    dark: prism-dark
+  copy_button:
+    enable: true
+    show_result: true
+    style: flat
+  fold:
+    enable: true
+    height: 500
+
+back2top:
+  enable: true
+  sidebar: false
+  scrollpercent: true
+
+reading_progress:
+  enable: true
+  start_at: top
+  position: top
+  color: '#37c6c0'
+  height: 3px
+
+# ---------------------------------------------------------------
+# Math / 图表
+# ---------------------------------------------------------------
+math:
+  enable: true
+  per_page: true
+  katex:
+    enable: true
+    copy_tex: false
+
+mermaid:
+  enable: true
+  theme:
+    light: default
+    dark: dark
+
+# ---------------------------------------------------------------
+# 本地搜索（需要 hexo-generator-searchdb）
+# ---------------------------------------------------------------
+local_search:
+  enable: true
+  trigger: auto
+  top_n_per_article: 1
+  unescape: false
+  preload: false
+
+# ---------------------------------------------------------------
+# 其它
+# ---------------------------------------------------------------
+footer:
+  since: 2026
+  icon:
+    name: fa fa-heart
+    animated: true
+    color: '#ff0000'
+  powered: false
+
+creative_commons:
+  license: by-nc-sa
+  sidebar: false
+  post: true
+  language: deed.zh
