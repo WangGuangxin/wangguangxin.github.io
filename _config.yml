@@ -40,6 +40,10 @@ external_link:
 filename_case: 0
 render_drafts: false
 post_asset_folder: true
+# Resolve ![](image.png) against the post's own asset folder.
+# Without this, hexo-renderer-marked rewrites it to /image.png (site root).
+marked:
+  postAsset: true
 relative_link: false
 future: true
 syntax_highlighter: highlight.js
